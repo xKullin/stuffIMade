@@ -1,0 +1,38 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Weather Site</title>
+  <meta name="description" content="Gesälprov">
+  <meta name="author" content="Kullin">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://kit.fontawesome.com/a0eea558e3.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+  <div id = "wrapper">
+    <div id = "welcome">
+      <p>WeatherSite</p>
+    </div>
+  <form id = "SearchBar" action = "weather.php" method = "get">
+    <input id = "box" autocomplete = "off" type = "text" name = "city" placeholder = "Enter a city:"/>
+    <button id = "button" type = "submit"><i class="fa fa-search"></i></button>
+  </form>
+  <div class = "hide" id = "errorMsg">
+  </div>
+  <div id = "suggestions" class = "hide">
+    <div class = "hide">
+      <p><b>Your previous searches: </b></p>
+    </div>
+    <!-- suggest  -->
+    <div class = "hide">
+      <p><a href = "weather.php?city=---city---" >---city---</a></p>
+    </div>
+
+    <!-- suggest  -->
+    </div>
+  </div>
+</body>
+</html>

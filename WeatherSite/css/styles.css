@@ -1,0 +1,92 @@
+/* TODO: Fix error message when there's previous searches, not important right now */
+
+*{
+  font-family: helvetica;
+}
+/* Search bar with modifications from: https://codepen.io/huange/pen/rbqsD*/
+#SearchBar{
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+#box{
+  width: 100%;
+  border: 3px solid #081a73;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  outline: none;
+}
+#box:focus{
+  color: #081a73;
+}
+#button{
+  width: 40px;
+  height: 36px;
+  border: 1px solid #081a73;
+  background: #081a73;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+}
+#wrapper{
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 300px;
+}
+#suggestions{
+  position: relative;
+  text-align: center;
+  border: 2px solid #081a73;
+  border-top: none;
+  border-bottom: none;
+  overflow: hidden;
+}
+#welcome{
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.4em;
+  color: #081a73;
+}
+.suggest{
+  position: relative;
+  text-align: center;
+  border-bottom: 2px solid #081a73;
+}
+.errorCity, .errorSearch{
+  font-weight: bold;
+  position: relative;
+  text-align: center;
+  border-bottom: 2px solid #081a73;
+  overflow: hidden;
+}
+a{
+  text-decoration: none;
+  color: #081a73;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+#weatherData{
+  text-align: center;
+  width: 200px;
+  border: 3px solid #081a73;
+  padding: 5px;
+  outline: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#weatherData a{
+  font-size: 1em;
+}
+.hide, .hide-err, .hide-data{
+  display: none !important;
+}
+.show, #searchWrap{
+  display: block;
+}
